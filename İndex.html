@@ -1,141 +1,108 @@
 <!DOCTYPE html>
-<html lang="az">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="">
-    <title>CV Ad Soyad</title>
+    <meta name="viewport" content="width=1024">
+    <title>Mənim CV-im</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 50px 0;
-            display: flex;
-            justify-content: center;
+            background-color: lightgray; /* Sadə boz fon */
+            font-family: sans-serif;
+            margin-top: 50px;
         }
 
-        .cv-paper {
-            width: 800px;
-            background: white;
-            padding: 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        /* Əsas ağ kağız hissəsi */
+        .cv-qutusu {
+            width: 750px;
+            background-color: white;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid black;
         }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 20px;
+        .ust-hisse {
             margin-bottom: 30px;
+            overflow: hidden; /* float işləsin deyə */
         }
 
-        .profile-photo {
-            width: 120px;
-            height: 120px;
-            background-color: #eee;
-            border: 1px solid #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            color: #888;
-        }
-
-        .main-info h1 {
-            margin: 0;
-            font-size: 36px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .section {
-            margin-bottom: 25px;
-        }
-
-        .section-title {
-            font-weight: bold;
-            font-size: 18px;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            color: #222;
-        }
-
-        .content-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-     
-
-        .skill-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-
-        .skill-item {
-            background: #f9f9f9;
-            padding: 8px;
-            border: 1px solid #eee;
+        .sekil {
+            width: 130px;
+            height: 140px;
+            border: 1px solid gray;
+            float: left;
+            margin-right: 20px;
             text-align: center;
+        }
+
+        .ad-soyad {
+            float: left;
+        }
+
+        .bashliq {
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .melumatlar {
+            margin-left: 10px;
+        }
+
+        /* Bacarıqlar üçün sadə alt-alta düzülüş */
+        .skill-list {
+            margin-left: 20px;
+        }
+
+        .xett {
+            border-bottom: 1px solid #000;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
 
-<div class="cv-paper">
-    <div class="header">
-        <div class="main-info">
-            <h1>AD SOYAD</h1>
-            <p>Vəzifə / İxtisas Sahəsi</p>
-            <p>Email: info@example.com | Telefon: +994 -- --- -- --</p>
+<div class="cv-qutusu">
+    <div class="ust-hisse">
+        <div class="sekil">
+            <img src="foto.jpg" alt="Şəkil Yeri" style="width:100%; height:100%;">
         </div>
-        <div class="profile-photo">
-            <img src="user-photo.jpg" alt="FOTO" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Haqqında</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate pulvinar neque, interdum placerat eros auctor quis. Cras porta massa eleifend, tristique elit vehicula, fermentum nisi.</p>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Təhsil</div>
-        <ul class="content-list">
-            <li>
-                <span>Universet / İxtisas</span>
-                <span>2025 - 2026</span>
-            </li>
-            <li>
-                <span>Kurs və ya Sertifikat Adı</span>
-                <span>2026</span>
-            </li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Bacarıqlar</div>
-        <div class="skill-grid">
-            <div class="skill-item">Bacarıq 1</div>
-            <div class="skill-item">Bacarıq 2</div>
-            <div class="skill-item">Bacarıq 3</div>
-            <div class="skill-item">Bacarıq 4</div>
-            <div class="skill-item">Bacarıq 5</div>
-            <div class="skill-item">Bacarıq 6</div>
+        <div class="ad-soyad">
+            <h1 style="margin:0;">AD SOYAD</h1>
+            <p>Email: mail@nümunə.com</p>
+            <p>Telefon: 050-000-00-00</p>
+            <p>Ünvan: Bakı şəhəri</p>
         </div>
     </div>
 
-    <div class="section">
-        <div class="section-title">Lahiyələr</div>
-        <ul class="content-list">
-            <li><strong>Layihə 1:</strong>     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li><strong>Layihə 2:</strong> Quisque vulputate pulvinar neque, interdum placerat eros auctor quis.</li>
-        </ul>
+    <div class="xett"></div>
+
+    <div class="bashliq">HAQQIMDA</div>
+    <div class="melumatlar">
+        Mən bura öz haqqımda nəsə yazmalıyam. Hazırda tələbəyəm və bu sahəni öyrənirəm.
     </div>
+
+    <div class="bashliq">BACARIQLAR</div>
+    <div class="skill-list">
+        - Bacarıq 1 <br>
+        - Bacarıq 2 <br>
+        - Bacarıq 3 <br>
+        - Bacarıq 4 <br>
+    </div>
+
+    <div class="bashliq">TƏHSİL</div>
+    <div class="melumatlar">
+        <strong>Məktəb:</strong> Bura məktəb adını yaz <br>
+        <strong>İl:</strong> 2015 - 2026
+    </div>
+
+    <div class="bashliq">LAYİHƏLƏR</div>
+    <div class="melumatlar">
+        1. İlk saytım (HTML ilə düzəltmişəm) <br>
+        2. Test proqramı
+    </div>
+
 </div>
 
 </body>
